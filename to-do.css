@@ -7,14 +7,14 @@
 }
 ::selection{
   color: #ffff;
-  background: rgb(218, 201, 241);
+  background: rgb(207, 121, 175);
 }
 body{
   width: 100%;
   height: 100vh;
   /* overflow: hidden; */
   padding: 10px;
-  background: linear-gradient(to bottom, #dfeeeb 0%, #08090c 100%);
+background-color: aqua;
 }
 .wrapper{
   background: #fff;
@@ -23,7 +23,7 @@ body{
   margin: 120px auto;
   padding: 25px;
   border-radius: 5px;
-  
+ 
 }
 .wrapper header{
   font-size: 30px;
@@ -46,7 +46,7 @@ body{
   transition: all 0.3s ease;
 }
 .inputField input:focus{
-  border-color: #e689c8;
+  border-color: #d883b7;
 }
 .inputField button{
   width: 50px;
@@ -56,7 +56,7 @@ body{
   margin-left: 5px;
   font-size: 21px;
   outline: none;
-  background: #e689c8;
+  background:  #d883b7;
   cursor: pointer;
   border-radius: 3px;
   opacity: 0.6;
@@ -65,7 +65,7 @@ body{
 }
 .inputField button:hover,
 .footer button:hover{
-  background: #e689c8;
+  background:  #d883b7;
 }
 .inputField button.active{
   opacity: 1;
@@ -78,22 +78,24 @@ body{
 .todoList li{
   position: relative;
   list-style: none;
-  height: 45px;
-  line-height: 45px;
   margin-bottom: 8px;
   background: #f2f2f2;
   border-radius: 3px;
-  padding: 0 15px;
+  padding: 10px 15px;
   cursor: default;
   overflow: hidden;
+  word-wrap: break-word;
 }
 .todoList li .icon{
   position: absolute;
   right: -45px;
-  background: #4a3f3e;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #8ad4ec;
   width: 45px;
   text-align: center;
   color: #fff;
+  padding: 10px 15px;
   border-radius: 0 3px 3px 0;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -117,7 +119,7 @@ body{
   font-weight: 400;
   font-size: 16px;
   margin-left: 5px;
-  background: #e689c8;
+  background:  #d883b7;
   cursor: pointer;
   user-select: none;
   opacity: 0.6;

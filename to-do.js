@@ -38,8 +38,8 @@ function showTasks(){
     listArray = JSON.parse(getLocalStorageData); 
   }
   const pendingTasksNumb = document.querySelector(".pendingTasks");
-  pendingTasksNumb.textContent = listArray.length; 
-  if(listArray.length > 0){ 
+  pendingTasksNumb.textContent = listArray.length;
+  if(listArray.length > 0){
     deleteAllBtn.classList.add("active");
   }else{
     deleteAllBtn.classList.remove("active"); 
@@ -59,10 +59,11 @@ function deleteTask(index){
   listArray.splice(index, 1); 
   localStorage.setItem("New Todo", JSON.stringify(listArray));
   showTasks(); 
-
 }
+
+
 deleteAllBtn.onclick = ()=>{
   listArray = []; 
   localStorage.setItem("New Todo", JSON.stringify(listArray)); 
-  showTasks(); 
+  showTasks();
 }
